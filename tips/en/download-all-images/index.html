@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/download-all-images/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/download-all-images.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Download all images from the page">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-download-all-images">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,16 +99,36 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-download-all-images">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Download all images from the page</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/productivity/" title="List all productivity tips">
+                productivity
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>If you want to download all of the images on a webpage in one go, you can use the following few lines of JavaScript code to do it:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">img</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  <span class="token keyword">try</span> <span class="token punctuation">{</span><br>    <span class="token keyword">const</span> src <span class="token operator">=</span> img<span class="token punctuation">.</span>src<span class="token punctuation">;</span><br><br>    <span class="token comment">// Fetch the image as a blob.</span><br>    <span class="token keyword">const</span> fetchResponse <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">await</span> fetchResponse<span class="token punctuation">.</span><span class="token function">blob</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> mimeType <span class="token operator">=</span> blob<span class="token punctuation">.</span>type<span class="token punctuation">;</span><br><br>    <span class="token comment">// Figure out a name for it from the src and the mime-type.</span><br>    <span class="token keyword">const</span> start <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> end <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">,</span> start<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">let</span> name <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> end <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">?</span> <span class="token keyword">undefined</span> <span class="token operator">:</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    name <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[^a-zA-Z0-9]+</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    name <span class="token operator">+=</span> <span class="token string">'.'</span> <span class="token operator">+</span> mimeType<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>mimeType<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token comment">// Download the blob using a &lt;a> element.</span><br>    <span class="token keyword">const</span> a <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    a<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    a<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'download'</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    a<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>This will list all of the <code>img</code> elements on the page, then attempt to fetch them from the server (which might fail for some, depending on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">CSP</a> on the page), and then trigger the download of each one of them by the browser, using a <code>&lt;a download&gt;</code> element.</p>
@@ -89,7 +136,7 @@
 <p><img src="/assets/img/download-all-images.png" alt="The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded"></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
             <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">

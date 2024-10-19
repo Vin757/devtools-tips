@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/disable-abusive-debugger-statement.gif">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/firefox.svg">
     <meta property="og:description" content="Disable abusive debugger statements that prevent inspecting websites">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-disable-abusive-debugger-statement">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,16 +99,36 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-disable-abusive-debugger-statement">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Disable abusive debugger statements that prevent inspecting websites</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/javascript/" title="List all javascript tips">
+                javascript
+            </a>
+        </li><li class="tag">
+            <a href="/tag/debug/" title="List all debug tips">
+                debug
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>Some websites make it impossible to use DevTools by adding <code>debugger</code> statements in their code.</p>
 <p>The statements don't do anything for normal users, but as soon as DevTools is opened, the JavaScript execution pauses, and this makes it impossible to debug or inspect the site as normal.</p>
 <p>To disable the abusive <code>debugger</code> statement:</p>
@@ -97,11 +144,16 @@
 <p>Thank you <a href="https://twitter.com/quicksave2k/status/1610250172210073607">François for the tweet</a> and <a href="https://github.com/captainbrosset/devtools-tips/issues/66">Pankaj Parashar for the tip about using the <strong>Never pause here</strong> option</a>.</p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
             <a href="/tips/en/debugger-statement" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
+            </a>
+        </li><li>
+            <a href="/tips/en/name-evaluated-files">Name evaluated files with the sourceURL pragma</a>
+            <a href="/tips/en/name-evaluated-files" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/name-evaluated-files.png" alt="Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma">
             </a>
         </li><li>
             <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>
@@ -112,11 +164,6 @@
             <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a>
             <a href="/tips/en/debug-js-hover" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.">
-            </a>
-        </li><li>
-            <a href="/tips/en/find-custom-elements-code">Find your web component&#39;s custom element code</a>
-            <a href="/tips/en/find-custom-elements-code" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox&#39;s inspector and that clicking on it goes to the debugger.">
             </a>
         </li></ul>
 </div><div class="tip-footer">

@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/change-video-playback-rate/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/change-video-playback-rate.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Speed up or slow down a video">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-change-video-playback-rate">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,16 +99,44 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-change-video-playback-rate">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Speed up or slow down a video</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/personalization/">personalization</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/console/" title="List all console tips">
+                console
+            </a>
+        </li><li class="tag">
+            <a href="/tag/personalization/" title="List all personalization tips">
+                personalization
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>You can speed up or slow down a video on a website by using the <a href="https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playbackRate"><code>playbackRate</code></a> property of the video element.</p>
 <p>This can be very useful for when the website makes it tricky to do this in the UI!</p>
 <ol>
@@ -95,8 +150,13 @@
 <p><img src="/assets/img/change-video-playback-rate.png" alt="Screenshot of the Console tool showing the playbackRate property"></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
+            <a href="/tips/en/get-recently-selected-dom-nodes-in-console">Get the recently selected DOM nodes in the console</a>
+            <a href="/tips/en/get-recently-selected-dom-nodes-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.">
+            </a>
+        </li><li>
             <a href="/tips/en/convert-font-units">Convert font property units</a>
             <a href="/tips/en/convert-font-units" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down.">
@@ -107,14 +167,9 @@
                 <img loading="lazy" src="/assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from">
             </a>
         </li><li>
-            <a href="/tips/en/get-current-element-in-console">Get the selected element in the console</a>
-            <a href="/tips/en/get-current-element-in-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/get-current-element-in-console.jpg" alt="Safari&#39;s console showing how the $0 shortcut returns the selected element.">
-            </a>
-        </li><li>
-            <a href="/tips/en/get-recently-selected-dom-nodes-in-console">Get the recently selected DOM nodes in the console</a>
-            <a href="/tips/en/get-recently-selected-dom-nodes-in-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.">
+            <a href="/tips/en/find-why-css-property-is-overridden">Find why a CSS property is overridden</a>
+            <a href="/tips/en/find-why-css-property-is-overridden" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-why-css-property-is-overridden.png" alt="Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.">
             </a>
         </li></ul>
 </div><div class="tip-footer">

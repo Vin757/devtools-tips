@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/move-panels/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/move-panels-1.gif">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Move panels to re-arrange them">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-move-panels">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,26 +99,46 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-move-panels">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Move panels to re-arrange them</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/personalization/">personalization</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/personalization/" title="List all personalization tips">
+                personalization
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>Moving panels around the user interface can be very useful to make DevTools more unique to you and adapted to your needs.</p>
 <p>There are 2 ways that you can re-arrange panels in DevTools today: dragging them horizontally in the toolbar, to re-order them, and moving them between the top toolbar and the bottom (drawer) toolbar</p>
-<h2>To move tabs between the top and bottom areas (Edge only)</h2>
+<h2 id="to-move-tabs-between-the-top-and-bottom-areas-(edge-only)" tabindex="-1">To move tabs between the top and bottom areas (Edge only) <a class="direct-link" href="#to-move-tabs-between-the-top-and-bottom-areas-(edge-only)">#</a></h2>
 <ul>
 <li>Right-click on any of the tabs.</li>
 <li>Select <strong>Move to Bottom</strong> or <strong>Move to Top</strong> depending on where the tab is.</li>
 </ul>
 <p>This only works in Edge at the moment is makes it super easy to see any 2 tools at once (more information about <a href="https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/">Edge personalization features</a>).</p>
 <p><img src="/assets/img/move-panels-1.gif" alt="Animation in Edge DevTools showing the move to top/bottom menus."></p>
-<h2>To re-order panels by dragging (Chrome, Edge, Firefox, Safari)</h2>
+<h2 id="to-re-order-panels-by-dragging-(chrome%2C-edge%2C-firefox%2C-safari)" tabindex="-1">To re-order panels by dragging (Chrome, Edge, Firefox, Safari) <a class="direct-link" href="#to-re-order-panels-by-dragging-(chrome%2C-edge%2C-firefox%2C-safari)">#</a></h2>
 <ul>
 <li>Click and hold any of the tabs in the toolbar.</li>
 <li>Move the tab horizontally, left or right, until the desired location is reached.</li>
@@ -101,8 +148,13 @@
 <p><img src="/assets/img/move-panels-2.gif" alt="Animation in Firefox DevTools showing how to move panels in the toolbar."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
+            <a href="/tips/en/block-devtools">Block DevTools</a>
+            <a href="/tips/en/block-devtools" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/block-devtools.png" alt="Disabling F12 in Firefox&#39;s about:config page">
+            </a>
+        </li><li>
             <a href="/tips/en/customize-keyboard-shortcuts">Customize keyboard shortcuts</a>
             <a href="/tips/en/customize-keyboard-shortcuts" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/customize-keyboard-shortcuts.png" alt="The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.">
@@ -113,14 +165,9 @@
                 <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
             </a>
         </li><li>
-            <a href="/tips/en/extend-devtools">Install or create extensions to customize DevTools</a>
-            <a href="/tips/en/extend-devtools" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel.">
-            </a>
-        </li><li>
-            <a href="/tips/en/get-contextual-help">Get contextual DevTools help</a>
-            <a href="/tips/en/get-contextual-help" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/get-contextual-help.gif" alt="Animation of the DevTools tooltips in Edge.">
+            <a href="/tips/en/explain-errors-with-ai">Explain console errors by using artificial intelligence</a>
+            <a href="/tips/en/explain-errors-with-ai" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/explain-errors-with-ai.png" alt="Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation">
             </a>
         </li></ul>
 </div><div class="tip-footer">

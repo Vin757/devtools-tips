@@ -17,7 +17,6 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main >
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -79,14 +106,32 @@
   <a href="/tips/en/convert-image-to-data-url/" class="tip-title">Convert images to data-urls</a>
   <a href="/tips/en/convert-image-to-data-url/" class="tip-image"><img src="../../assets/img/convert-image-to-data-url.png" alt="The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    A data URL is a URL that starts with the prefix data: instead of http: or https. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than link...
+    A data URL is a URL that starts with the prefix data: instead of http: or https:. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than lin...
     <a href="/tips/en/convert-image-to-data-url/">Read more</a>
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -95,15 +140,31 @@
   <a href="/tips/en/inspect-devtools-with-devtools/" class="tip-image"><img src="../../assets/img/inspect-devtools-with-devtools-chrome.png" alt="Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one" loading="lazy"></img></a>
   <div class="tip-excerpt">
     The user interface of DevTools is built with HTML, CSS, and JavaScript. This means you can inspect and debug DevTools with DevTools.
-Chromium
-To debug DevTools in Chromium-based browsers, such as Chro...
+Chromium #
+To debug DevTools in Chromium-based browsers, such as Ch...
     <a href="/tips/en/inspect-devtools-with-devtools/">Read more</a>
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/personalization/" title="See all tips about personalization">personalization</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/personalization/" title="List all personalization tips">personalization</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -118,9 +179,15 @@ First, enable the...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -134,9 +201,17 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -149,9 +224,17 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -164,9 +247,15 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -180,25 +269,57 @@ To get rid of an annoying overlay, or any o...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-jump-to-referenced-elements;">
+<li class="hover-box tip " style="view-transition-name:post-jump-to-referenced-elements;">
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-title">Jump from a label `for` attribute to the linked input (and more)</a>
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-image"><img src="../../assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by Cmd+clicking (or Ctrl+clicking) the attribute.
-Here is a common example for whe...
+    In HTML, it's possible for certain attributes to reference other elements by their IDs. For example, a &lt;label&gt;'s for attribute can be used to link the label to the input it's associated with:
+&l...
     <a href="/tips/en/jump-to-referenced-elements/">Read more</a>
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -213,9 +334,27 @@ Right-click on t...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/network/" title="List all network tips">network</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -229,9 +368,29 @@ To do this, select an element in...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -247,9 +406,35 @@ C...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/console/" title="List all console tips">console</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -263,9 +448,27 @@ You can use $r in the Console tool to reference the currently selected element i
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/frameworks/" title="See all tips about frameworks">frameworks</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/console/" title="List all console tips">console</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/frameworks/" title="List all frameworks tips">frameworks</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -278,9 +481,29 @@ You can use $r in the Console tool to reference the currently selected element i
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -294,9 +517,27 @@ $$('img').forEach(async (img) => { try { const src = img.src;...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -310,9 +551,19 @@ Press Ctrl+Shift+P on Windows or Linux (or Cmd+Shift...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -326,9 +577,35 @@ When you turn on designMode for the document or...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/console/" title="List all console tips">console</a>
+      </li><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -342,9 +619,27 @@ In Firefox it's really simple and doesn't even require opening DevToo...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -358,9 +653,35 @@ This shortcut will return the D...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/console/" title="List all console tips">console</a>
+      </li><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -375,9 +696,29 @@ Right-click on the node you want to expand...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 </ul>

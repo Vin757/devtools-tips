@@ -17,7 +17,6 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main >
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -73,8 +100,106 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>24 Testing tips</h1>
+        <h1>27 Testing tips</h1>
 <ul class="tips">
+<li class="hover-box tip " style="view-transition-name:post-override-source-files;">
+  <a href="/tips/en/override-source-files/" class="tip-title">Override source files to test changes in the browser</a>
+  <a href="/tips/en/override-source-files/" class="tip-image"></a>
+  <div class="tip-excerpt">
+    It can be helpful to make quick changes to the source code that a site uses, especially when debugging a site in production. For example, if you suspect that a bug is caused by a specific line of code...
+    <a href="/tips/en/override-source-files/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/debug/" title="List all debug tips">debug</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-override-headers;">
+  <a href="/tips/en/override-headers/" class="tip-title">Override HTTP response headers</a>
+  <a href="/tips/en/override-headers/" class="tip-image"><img src="../../assets/img/override-headers.png" alt="Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    With DevTools, you can override the response headers of a network request and test your website under different conditions.
+HTTP response headers are metadata sent by the server to the browser, along...
+    <a href="/tips/en/override-headers/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/network/" title="List all network tips">network</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-disable-all-css;">
+  <a href="/tips/en/disable-all-css/" class="tip-title">Disable all CSS styles on the page</a>
+  <a href="/tips/en/disable-all-css/" class="tip-image"><img src="../../assets/img/disable-all-css.png" alt="Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    To remove all CSS styles on a webpage, for example to test the accessibility of a page when styles are disabled, or to verify the order in which content is displayed, you can use the techniques below....
+    <a href="/tips/en/disable-all-css/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip " style="view-transition-name:post-see-viewport-size;">
   <a href="/tips/en/see-viewport-size/" class="tip-title">See the viewport size</a>
   <a href="/tips/en/see-viewport-size/" class="tip-image"><img src="../../assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage" loading="lazy"></img></a>
@@ -85,9 +210,35 @@ You can easily know what the current size of the...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/debug/" title="List all debug tips">debug</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -100,9 +251,29 @@ You can easily know what the current size of the...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li><li class="tag">
+        <a href="/tag/network/" title="List all network tips">network</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -116,9 +287,35 @@ One way is to run a few...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li><li class="tag">
+        <a href="/tag/console/" title="List all console tips">console</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -132,9 +329,33 @@ DevT...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -148,9 +369,15 @@ In Polypane, the Outline Panel will show y...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -163,9 +390,33 @@ In Polypane, the Outline Panel will show y...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -179,9 +430,17 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -194,9 +453,17 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/perf/" title="See all tips about perf">perf</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/perf/" title="List all perf tips">perf</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -209,9 +476,17 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -224,9 +499,21 @@ It lets you test different simulated device...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/apps/" title="See all tips about apps">apps</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li><li class="tag">
+        <a href="/tag/apps/" title="List all apps tips">apps</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -240,9 +527,15 @@ Note:...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -256,9 +549,31 @@ As a web developer, it is very important to realize that your website...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -272,9 +587,19 @@ Chrome and Edge DevTools have a...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -287,9 +612,21 @@ Chrome and Edge DevTools have a...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -304,9 +641,27 @@ Right-click on t...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/network/" title="List all network tips">network</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -319,9 +674,27 @@ Right-click on t...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -337,9 +710,35 @@ C...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/console/" title="List all console tips">console</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -352,9 +751,19 @@ C...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/perf/" title="See all tips about perf">perf</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/accessibility/" title="List all accessibility tips">accessibility</a>
+      </li><li class="tag">
+        <a href="/tag/perf/" title="List all perf tips">perf</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -368,9 +777,31 @@ In th...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -383,25 +814,56 @@ In th...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-record-replay;">
+<li class="hover-box tip " style="view-transition-name:post-record-replay;">
   <a href="/tips/en/record-replay/" class="tip-title">Record and replay user flows</a>
-  <a href="/tips/en/record-replay/" class="tip-image"><img src="../../assets/img/record-replay.gif" alt="Animation of the Recorder panel automatically replaying a set of recorded steps." loading="lazy"></img></a>
+  <a href="/tips/en/record-replay/" class="tip-image"><img src="../../assets/img/record-replay.png" alt="Animation of the Recorder panel automatically replaying a set of recorded steps." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
-Sometimes you just have to click the same buttons and do the same actions every time...
+    Sometimes, you need to repeatedly test the same user scenario on a website. This can happen when working on a fix or a performance improvement. Testing the same user scenario over and over again requi...
     <a href="/tips/en/record-replay/">Read more</a>
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/perf/" title="See all tips about perf">perf</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li><li class="tag">
+        <a href="/tag/perf/" title="List all perf tips">perf</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -416,9 +878,29 @@ Click anywhere in the panel...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -431,9 +913,25 @@ Click anywhere in the panel...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/network/" title="List all network tips">network</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li></ul>
   </div>
 </li>
 
@@ -448,9 +946,29 @@ Use the context-...
   </div>
   <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    <ul class="tags"><li class="tag">
+        <a href="/tag/html/" title="List all html tips">html</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
   </div>
 </li>
 </ul>

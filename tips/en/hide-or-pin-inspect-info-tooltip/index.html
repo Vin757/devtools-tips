@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/hide-or-pin-inspect-info-tooltip/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/hide-or-pin-inspect-info-tooltip-1.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/chrome.svg">
     <meta property="og:description" content="Hide or pin the information tooltip while inspecting page elements">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-hide-or-pin-inspect-info-tooltip">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,26 +99,46 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-hide-or-pin-inspect-info-tooltip">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Hide or pin the information tooltip while inspecting page elements</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/highlighter/">highlighter</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/html/" title="List all html tips">
+                html
+            </a>
+        </li><li class="tag">
+            <a href="/tag/css/" title="List all css tips">
+                css
+            </a>
+        </li><li class="tag">
+            <a href="/tag/highlighter/" title="List all highlighter tips">
+                highlighter
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>When selecting elements from the page using the <strong>inspect</strong> tool, the hovered elements get highlighted, and an information tooltip follows your mouse around and gives you information about the hovered element.</p>
 <p>You can hide, or pin this information tooltip in Chrome or Edge.</p>
-<h2>To hide the information tooltip</h2>
+<h2 id="to-hide-the-information-tooltip" tabindex="-1">To hide the information tooltip <a class="direct-link" href="#to-hide-the-information-tooltip">#</a></h2>
 <ol>
 <li>Start the <strong>inspect</strong> tool by clicking <strong>Select an element in the page to inspect it</strong> (the little cursor icon in the top left corner of DevTools).</li>
 <li>Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.</li>
 <li>Hold the <kbd>Ctrl</kbd> key on your keyboard, the information tooltip disappears.</li>
 </ol>
 <p><img src="/assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed."></p>
-<h2>To pin the highlight and information tooltip on the current element</h2>
+<h2 id="to-pin-the-highlight-and-information-tooltip-on-the-current-element" tabindex="-1">To pin the highlight and information tooltip on the current element <a class="direct-link" href="#to-pin-the-highlight-and-information-tooltip-on-the-current-element">#</a></h2>
 <ol>
 <li>Start the <strong>inspect</strong> tool by clicking <strong>Select an element in the page to inspect it</strong> (the little cursor icon in the top left corner of DevTools).</li>
 <li>Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.</li>
@@ -100,7 +147,7 @@
 <p><img src="/assets/img/hide-or-pin-inspect-info-tooltip-2.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, but another one is highlighted and has the info tooltip."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/remove-annoying-overlays">Remove annoying page overlays and other elements</a>
             <a href="/tips/en/remove-annoying-overlays" class="other-tip-image">
@@ -117,9 +164,9 @@
                 <img loading="lazy" src="/assets/img/debug-popups-on-hover.png" alt="The Rendering tool in DevTools, showing the Emulate a focused page option">
             </a>
         </li><li>
-            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
-            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
+            <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
+            <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
             </a>
         </li></ul>
 </div><div class="tip-footer">

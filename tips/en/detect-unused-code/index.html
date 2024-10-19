@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/detect-unused-code/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/detect-unused-code.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Detect unused CSS and JavaScript code">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-detect-unused-code">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,18 +99,42 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-detect-unused-code">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Detect unused CSS and JavaScript code</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/perf/" title="List all perf tips">
+                perf
+            </a>
+        </li><li class="tag">
+            <a href="/tag/css/" title="List all css tips">
+                css
+            </a>
+        </li><li class="tag">
+            <a href="/tag/javascript/" title="List all javascript tips">
+                javascript
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.</p>
-<h2>In Chromium-based browsers</h2>
+<h2 id="in-chromium-based-browsers" tabindex="-1">In Chromium-based browsers <a class="direct-link" href="#in-chromium-based-browsers">#</a></h2>
 <p>Chrome and Edge have a useful <strong>Coverage</strong> tool that can help identify which parts of code are unused. To detect unused code on page load:</p>
 <ol>
 <li>
@@ -103,7 +154,7 @@
 </ol>
 <p>You can now decide whether some parts of your code can be loaded later, when needed only.</p>
 <p><img src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used"></p>
-<h2>In Safari</h2>
+<h2 id="in-safari" tabindex="-1">In Safari <a class="direct-link" href="#in-safari">#</a></h2>
 <p>In Safari, you can detect unused JS code, with the following steps,</p>
 <ol>
 <li>
@@ -122,8 +173,13 @@
 <p><img src="/assets/img/detect-unused-code-safari.png" alt="Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file"></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
+            <a href="/tips/en/name-evaluated-files">Name evaluated files with the sourceURL pragma</a>
+            <a href="/tips/en/name-evaluated-files" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/name-evaluated-files.png" alt="Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma">
+            </a>
+        </li><li>
             <a href="/tips/en/ignore-scripts">Ignore JavaScript code to ease debugging</a>
             <a href="/tips/en/ignore-scripts" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code.">
@@ -137,11 +193,6 @@
             <a href="/tips/en/copy-from-console">Copy an object from the console</a>
             <a href="/tips/en/copy-from-console" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
-            </a>
-        </li><li>
-            <a href="/tips/en/find-all-elements-with-style">Find all elements with a specific style</a>
-            <a href="/tips/en/find-all-elements-with-style" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-all-elements-with-style.png" alt="The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right">
             </a>
         </li></ul>
 </div><div class="tip-footer">

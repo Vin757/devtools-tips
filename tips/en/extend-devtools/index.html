@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/extend-devtools/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/extend-devtools.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Install or create extensions to customize DevTools">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-extend-devtools">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,31 +99,59 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-extend-devtools">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Install or create extensions to customize DevTools</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/personalization/">personalization</a></li><li class="tag"><a href="/tag/frameworks/">frameworks</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/personalization/" title="List all personalization tips">
+                personalization
+            </a>
+        </li><li class="tag">
+            <a href="/tag/frameworks/" title="List all frameworks tips">
+                frameworks
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>There's <a href="/tips/en/discover-all-tools">a lot of tools</a> in DevTools already, probably more than you use. But in some cases, you may need very specific tools that aren't available by default.</p>
 <p>Thankfully, DevTools can be extended with custom tools! You can either download extensions others have created to customize the DevTools UI, or even <strong>create your own</strong>.</p>
 <p>For example, you can download the <a href="https://github.com/facebook/react/tree/main/packages/react-devtools-extensions#installation">React DevTools extension</a> for Chrome, Firefox, or Edge.</p>
 <p>All browsers have their own extension stores where you can find other DevTools extensions: <a href="https://chrome.google.com/webstore/category/extensions">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home">Edge</a>, <a href="https://addons.mozilla.org/firefox/">Firefox</a>, <a href="https://developer.apple.com/safari/extensions/">Safari</a>.</p>
 <p>To go further, you can create your own extensions. Here are a few links to learn about developing your own extensions:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/devtools-extension">Create an extension that customizes the DevTools UI</a> on learn.microsoft.com.</li>
-<li><a href="https://developer.chrome.com/docs/extensions/mv3/devtools/">Extending DevTools</a> on developer.chrome.com.</li>
+<li><a href="https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/devtools-extension">Create an extension that customizes the DevTools UI</a> on <a href="http://learn.microsoft.com">learn.microsoft.com</a>.</li>
+<li><a href="https://developer.chrome.com/docs/extensions/mv3/devtools/">Extending DevTools</a> on <a href="http://developer.chrome.com">developer.chrome.com</a>.</li>
 <li><a href="https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools">Extending the developer tools</a> on MDN.</li>
-<li><a href="https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector">Adding a web development tool to Safari Web Inspector</a> on developer.apple.com.</li>
+<li><a href="https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector">Adding a web development tool to Safari Web Inspector</a> on <a href="http://developer.apple.com">developer.apple.com</a>.</li>
 </ul>
 <p><img src="/assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/create-your-own-devtools-theme">Create your own DevTools theme</a>
             <a href="/tips/en/create-your-own-devtools-theme" class="other-tip-image">

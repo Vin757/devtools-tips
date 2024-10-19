@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/use-scripts-as-snippets/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/use-scripts-as-snippets-1.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Re-use scripts as snippets">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-use-scripts-as-snippets">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,20 +99,36 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-use-scripts-as-snippets">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Re-use scripts as snippets</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/javascript/" title="List all javascript tips">
+                javascript
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>The <strong>Console</strong> is great to write short JavaScript expressions that read from the document or manipulate it. But it's also a terrible editor.</p>
 <p>You can actually use a full editor in Edge, Chrome, and Safari to write more complex scripts and run them in the context of the current page and even keep them for later re-use.</p>
 <p>Note: if you're looking for a way to do this in Firefox, there isn't currently one. However, you can <a href="/tips/en/multi-line-console">write code on multiple lines</a> which helps a lot already, and even search through previous Console expressions by pressing <kbd>F9</kbd> in the <strong>Console</strong> tool.</p>
-<h2>In Edge &amp; Chrome</h2>
+<h2 id="in-edge-%26-chrome" tabindex="-1">In Edge &amp; Chrome <a class="direct-link" href="#in-edge-%26-chrome">#</a></h2>
 <p>In Chromium-based browsers, these are called <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets"><strong>snippets</strong></a> and you can access them in the <strong>Sources</strong> tool by clicking <strong>Snippets</strong> in the left hand side toolbar (you may have to use the <code>&gt;&gt;</code> to reach them).</p>
 <p>You can create as many named snippets as you like and remove ones you don't need any more.</p>
 <p>Snippets have full access to the window object and you can use any of the console API methods in them too. For example, this script would replace each image in the document with its alternative text:</p>
@@ -94,12 +137,12 @@
 <p><img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor."></p>
 <p>Even better, you can use the <a href="/tips/en/execute-commands">Command menu</a> to run snippets more easily. Simply press <kbd>ctrl</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>P</kbd> on mac) and type <code>!</code> followed by the name of your Snippet.</p>
 <p><img src="/assets/img/use-scripts-as-snippets-2.gif" alt="Running a snippet from the Command menu."></p>
-<h2>In Safari</h2>
+<h2 id="in-safari" tabindex="-1">In Safari <a class="direct-link" href="#in-safari">#</a></h2>
 <p>In Safari, these scripts are called Console Snippets and can also be created from the <strong>Sources</strong> tool by clicking the <code>+</code> icon at the bottom of the tool, and choosing <strong>Console Snippet...</strong>.</p>
 <p><img src="/assets/img/use-scripts-as-snippets-3.gif" alt="Creating a snippet in Safari."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/multi-line-console">Write code on multiple lines in the Console</a>
             <a href="/tips/en/multi-line-console" class="other-tip-image">

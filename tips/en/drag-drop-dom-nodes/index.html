@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/drag-drop-dom-nodes/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/drag-drop-dom-nodes.gif">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="Drag and drop nodes in the DOM tree">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-drag-drop-dom-nodes">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,40 +99,60 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-drag-drop-dom-nodes">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Drag and drop nodes in the DOM tree</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/html/" title="List all html tips">
+                html
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p>If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you can do it by drag and dropping nodes around in the Elements (or Inspector) panel.</p>
 <p><img src="/assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
+            <a href="/tips/en/see-accessibility-tree">See the accessibility tree</a>
+            <a href="/tips/en/see-accessibility-tree" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/see-accessibility-tree-firefox.png" alt="The Accessibility tool in Firefox, showing the accessibility tree">
+            </a>
+        </li><li>
+            <a href="/tips/en/hide-elements">Hide elements from the page, without changing the layout</a>
+            <a href="/tips/en/hide-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/hide-elements.png" alt="Chrome with DevTools opened, showing how pressing H hides elements from the page">
+            </a>
+        </li><li>
+            <a href="/tips/en/inspect-user-agent-dom">Inspect the user-agent DOM</a>
+            <a href="/tips/en/inspect-user-agent-dom" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/inspect-user-agent-dom.png" alt="The Elements tool in Chrome, an input type=range is expanded, showing it&#39;s internal user-agent shadow dom">
+            </a>
+        </li><li>
             <a href="/tips/en/copy-element-js-path">Copy an element&#39;s JavaScript path</a>
             <a href="/tips/en/copy-element-js-path" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.">
-            </a>
-        </li><li>
-            <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
-            <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.">
-            </a>
-        </li><li>
-            <a href="/tips/en/expand-nodes-recursively">Expand DOM nodes recursively</a>
-            <a href="/tips/en/expand-nodes-recursively" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/expand-nodes-recursively.gif" alt="Animation showing right-clicking on a node in Chrome&#39;s Elements panel and choosing &quot;expand recursively&quot;.">
-            </a>
-        </li><li>
-            <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>
-            <a href="/tips/en/get-detached-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/get-detached-elements.png" alt="The Detached Elements panel in Edge, with the Memory panel next to it.">
             </a>
         </li></ul>
 </div><div class="tip-footer">

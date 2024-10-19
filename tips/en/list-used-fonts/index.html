@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/list-used-fonts/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/list-used-fonts-firefox.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
     <meta property="og:description" content="List the fonts used on a page, or an element">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-list-used-fonts">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,22 +99,42 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-list-used-fonts">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">List the fonts used on a page, or an element</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/css/" title="List all css tips">
+                css
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p><em>&quot;What font is that?&quot;</em> or <em>&quot;Why is this font used?&quot;</em> are probably questions you've asked yourself while working on a website design.</p>
 <p>However, it's not always easy to know which fonts are actually used on a webpage and looking at the CSS the page uses might not always give you the answer.</p>
 <p>Webpages often define multiple different fonts, for example: <code>font-family: Baskerville, &quot;Baskerville Old Face&quot;, &quot;Hoefler Text&quot;, Garamond, &quot;Times New Roman&quot;, serif;</code></p>
 <p>When the browser renders a page, if the first font in the list is not available on the device, the browser falls back to the next font. If the next one isn't available either, it falls back to the next one and so on. Also some fonts are defined with generic names such as <code>serif</code>, or <code>monospace</code>, which tells you nothing about which exact font the browser chose to use.</p>
 <p>DevTools can help you determine which fonts are used on a webpage, or on a specific element on a page.</p>
-<h2>In Firefox</h2>
+<h2 id="in-firefox" tabindex="-1">In Firefox <a class="direct-link" href="#in-firefox">#</a></h2>
 <p>Firefox has the best tool to inspect fonts. To know which fonts are used on a webpage:</p>
 <ol>
 <li>
@@ -111,7 +158,7 @@
 <li>The <strong>Fonts</strong> tab updates and gives the list of fonts used in that single element.</li>
 </ol>
 <p>Note that an element may require multiple fonts to render correctly, even if this element only contains a single text node. This can happen when the font used to render the element doesn't have all the glyphs required to render the text, in which case the browser falls back to another font to render the missing glyphs.</p>
-<h2>In Chrome or Edge</h2>
+<h2 id="in-chrome-or-edge" tabindex="-1">In Chrome or Edge <a class="direct-link" href="#in-chrome-or-edge">#</a></h2>
 <p>In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) was/were used to render a given text-containing element:</p>
 <ol>
 <li>
@@ -126,7 +173,7 @@
 </li>
 </ol>
 <p><img src="/assets/img/list-used-fonts-chrome.png" alt="Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts"></p>
-<h2>In Polypane</h2>
+<h2 id="in-polypane" tabindex="-1">In Polypane <a class="direct-link" href="#in-polypane">#</a></h2>
 <p>In Polypane, you can see which font was used to render a given text-containing element:</p>
 <ol>
 <li>
@@ -142,7 +189,7 @@
 <p><img src="/assets/img/list-used-fonts-polypane.png" alt="Polypane, with Devtools on the side, showing the Element Overview panel that contains the list of fonts and a node tooltip."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/convert-font-units">Convert font property units</a>
             <a href="/tips/en/convert-font-units" class="other-tip-image">

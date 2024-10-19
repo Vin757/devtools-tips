@@ -11,13 +11,12 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-css-cascade-layers/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/debug-css-cascade-layers-firefox.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/chrome.svg">
     <meta property="og:description" content="Visualize and debug CSS cascade layers">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -33,17 +32,45 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
-            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-debug-css-cascade-layers">
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -72,19 +99,43 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"style="view-transition-name:post-debug-css-cascade-layers">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">Visualize and debug CSS cascade layers</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    <ul class="tags"><li class="tag">
+            <a href="/tag/css/" title="List all css tips">
+                css
+            </a>
+        </li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
+        </li></ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     <p><a href="https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers">Cascade layers</a> is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity. To learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>.</p>
 <p>In this tip, let's see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels, and some browsers have more advanced features.</p>
-<h2>All browsers</h2>
+<h2 id="all-browsers" tabindex="-1">All browsers <a class="direct-link" href="#all-browsers">#</a></h2>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
 <li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
@@ -92,7 +143,7 @@
 <li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label next to them.</li>
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules"></p>
-<h2>Chrome and Edge only</h2>
+<h2 id="chrome-and-edge-only" tabindex="-1">Chrome and Edge only <a class="direct-link" href="#chrome-and-edge-only">#</a></h2>
 <p>On top of the above, Chrome and Edge have a <strong>Layers</strong> view that shows the cascade layers in a list:</p>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
@@ -100,7 +151,7 @@
 <li>Click the <strong>Toggle CSS layers view</strong> button in the <strong>Styles</strong> panel toolbar (next to the search field) to reveal the list of layers.</li>
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view"></p>
-<h2>Polypane only</h2>
+<h2 id="polypane-only" tabindex="-1">Polypane only <a class="direct-link" href="#polypane-only">#</a></h2>
 <p>Polypane also has a <strong>CSS Layers</strong> view that shows the cascade layers in a list:</p>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
@@ -110,8 +161,13 @@
 <p><img src="/assets/img/debug-css-cascade-layers-polypane.png" alt="Polypane with a demo page that uses layers, the Elements panel is open and shows three layers in the CSS Layers view, one of which is dimmed."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
+            <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
+            <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
+            </a>
+        </li><li>
             <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
             <a href="/tips/en/find-inactive-styles" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.">
@@ -125,11 +181,6 @@
             <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
             <a href="/tips/en/copy-element-styles" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
-            </a>
-        </li><li>
-            <a href="/tips/en/copy-rule-as-css-in-js">Copy a CSS rule as CSS-in-JS format</a>
-            <a href="/tips/en/copy-rule-as-css-in-js" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-rule-as-css-in-js.gif" alt="Aimation showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
